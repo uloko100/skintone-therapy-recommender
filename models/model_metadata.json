@@ -1,0 +1,49 @@
+{
+  "model_name": "Logistic Regression",
+  "trained_on": "2026-10-12",
+  "python_version": "3.13.16",
+  "sklearn_version": "1.6.1",
+  "features": [
+    "monk_tone",
+    "age",
+    "skin_type",
+    "skin_concern",
+    "sensitive"
+  ],
+  "categorical_values": {
+    "skin_type": [
+      "combination",
+      "dry",
+      "normal",
+      "oily"
+    ],
+    "skin_concern": [
+      "acne",
+      "dryness",
+      "dullness",
+      "fine_lines",
+      "hyperpigmentation",
+      "redness"
+    ]
+  },
+  "monk_tone_range": [
+    1,
+    10
+  ],
+  "classes": [
+    "Anti-Aging Facial",
+    "Brightening Facial",
+    "Deep-Cleansing Facial",
+    "Gentle Exfoliating Facial",
+    "Hydrating Facial",
+    "LED Light Therapy",
+    "Soothing Facial"
+  ],
+  "test_accuracy": 0.935,
+  "accuracy_by_tone_group": {
+    "deep (7-10)": 0.952,
+    "light (1-3)": 0.924,
+    "medium (4-6)": 0.925
+  },
+  "disclaimer": "Educational demo trained on synthetic data. Not medical advice."
+}
